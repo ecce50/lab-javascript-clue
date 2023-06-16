@@ -151,4 +151,16 @@ function pickMystery(suspect, weapon, room) {
 
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery( //Passing an object as parameters to the function
+  newMystery = {
+    suspect: "",
+    weapon: "",
+    room: "",
+  }
+) {
+  pickMystery(newMystery);
+  console.log(
+    `${newMystery.firstName} ${newMystery.lastName} killed Mr. Boddy using the ${newMystery.weapon} in the ${newMystery.room}!`
+  );
+  return `${newMystery.firstName} ${newMystery.lastName} killed Mr. Boddy using the ${newMystery.weapon.name} in the ${newMystery.room.name}!`;
+}
