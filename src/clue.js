@@ -143,7 +143,7 @@ function selectRandom(arr) {
 function pickMystery(suspect, weapon, room) {
   mystery = {
     suspect: selectRandom(suspectsArray),
-    weapon: selectRandom(weaponArray),
+    weapon: selectRandom(weaponsArray),
     room: selectRandom(roomsArray),
   };
   return mystery;
